@@ -1,11 +1,97 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 <head>
-<title>Clari Comissions</title>
-<link rel="stylesheet" type="text/css" href="main.css">
+<link id="pagestyle" rel="stylesheet" type="text/css" href="main.css" media="screen"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-
 <body>
-<h1>Commissions OPEN</h1>
+<div class="header">
+  <a href="index.html"><img src="nuclearquasar.png" alt="filler images" width="200" height="75"></a>
+  <button onClick="swapStyleSheet('mmain.css')" style="float: right;">Mobile</button>
+</div>
+<div id="navbar">
+  <a href="index.html">Home</a>
+  <a href="synthesis.html">Latest Post</a>
+  <a href="projects.html">Projects</a>
+  <a href="gallery.html">Gallery</a>
+  <a href="posts.html">Posts</a>
+</div>
+<div class="content">
+    <div class="contentblock">
+     <h3>Synthesis &#126; Analogue and Digital</h3>
+      <a href="synthesis.html"><img src="microbrutestone.jpg" width="" height=""></a>
+      <p>
+        This article goes into some of the different type of sound synthesis. 
+        <a href="synthesis.html" class="links">Read More&gt;</a>
+      </p>
+    </div>
+
+     <div class="contentblock">
+     <h3>*Note*</h3>
+      <p>
+        This is live at <a href="nuclearquasar.github.com">nuclearquasar.github.com</a>
+      </p>
+    </div>
+
+    <div class="contentblock">
+     <h3>SpaceX and Tesla and stuff</h3>
+      <p>
+        SpaceX And Stuff Article by Tim Urban 
+        <a href="https://www.waitbutwhy.com/spacex" class="links">Read More&gt;</a>
+      </p>
+    </div>
+
+    <div class="contentblock">
+      <h3>Builds: A collection</h3>
+      <a href="morsesynthesizer.html"><img src="Morsesynthesizer.JPG" width="" height=""></a>
+    <div style="">
+      <a href="wedge.html"><img src="Wedge.JPG" width="150" height="150" style=""></a>
+      <a href="8020.html"><img src="IMG_3602.JPG" width="150" height="150" style=""></a>
+      <a href="computercase.html"><img src="IMG_3202.JPG" width="150" height="150" style=""></a>
+    </div>
+      <p>
+        A collection of things I have built over the years.
+        <a href="projects.html" class="links">Read More&gt;</a>
+      </p>
+    </div>
+
+    <div class="contentblock">
+     <h3>Should I start a Blog</h3>
+      <p><a href="blog.html" class="links">Read Mo...no&gt;</a><h6>no</h6></p>
+    </div>
+</div>
+<div class="footer">
+    <div class="row">
+      <div class="column" style="padding-top: 1em">
+        <a href="contact.html" style="text-decoration: underline;">Contact</a>
+      </div>
+      <div class="column" style="padding-bottom: 0em;">
+        <a href="https://www.twitter.com/nuclearquasar" style="font-size: 2.5em;"><i class="fa fa-twitter"></i></a>
+        <a href="" style="font-size: 2.5em;"><i class="fa fa-facebook"></i></a>
+        <a href="https://www.instagram.com/nuclearquasar" style="font-size: 2.5em;"><i class="fa fa-instagram"></i></a>
+        <a class="turtle" href="/turtle.html"><img src="/turtle.png" style="width: 1em; height: 1em;"></a>
+      </div>
+      <div class="column">
+        <p style="color: rgb(150,150,150);">
+          2019 Copywrite &#126; Clarimount &#126; Designed By Humans
+        </p>
+      </div>
+    </div>
+</div>
+<script>
+window.onscroll = function() {myFunction()};
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+function swapStyleSheet(sheet){
+     document.getElementById('pagestyle').setAttribute('href',sheet);
+}
+</script>
 </body>
 </html>
