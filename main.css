@@ -2,27 +2,19 @@ body {
   margin: 0;
   font-size: 1em;
   font-family: verdana;
+  background-image: url(image/header.png);
+  background-position-y: -10em;
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-attachment: fixed;
 }
 .header {
-  background-color: white;
-  padding: 1em;
-  text-align: left;
+  width: 100%;
 }
-.header button {
-  background-color: white;
-  color: black;
-  float: left;
-  display:block;
-  text-align:center;
-  text-decoration:none;
-  font-size: 10px;  
-  text-shadow: none; 
-  border:none;
-}
-.header button:hover {text-decoration: underline;}
 #navbar {
   overflow: hidden;
-  background-color: rgb(230,230,230);
+  background-color: rgba(0,0,0,0.2);
 }
 #navbar a {
   float: left;
@@ -34,7 +26,7 @@ body {
   font-size: 17px;
 }
 #navbar a:hover {
-  background-color: rgb(200 , 200 , 200);
+  background-color: rgba(255 , 255 , 255, 0.5);
   color: black;
 }
 .content {
@@ -74,20 +66,18 @@ body {
     border: none;
     border-top: none;
 }
-h3{ color: rgb(50,50,50); }
-img{
+img {
   max-width: 100%;
   height: auto;
 }
-.contentblock{
-  width: auto;
+.contentblock {
+  color: rgb(10,10,10);
+  width: 40em;
   margin-top: 2em;
   margin-bottom: 2em;
-  padding-top: 1em;
-  padding-bottom: 1em;
-  padding-right: 1em;
-  padding-left: 1em;
-  background-color: rgb(250 , 250 , 250);
+  margin: auto;
+  padding: 1em;
+  background-color: rgba(255 , 2550 , 255 , 0.8);
   box-shadow: 0px 0px 2px 1px rgba(0,0,0, 0.2);
 }
 .links{
@@ -110,7 +100,6 @@ img{
 }
 .column{
   font-size: 0.9em;
-  float: center;
   display: inline-block;
   padding-right: 0em;
   width: 33.33%;
