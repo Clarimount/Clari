@@ -9,17 +9,18 @@ body {
   background-position-x: center;
   background-attachment: fixed;
 }
-.header {
-  width: 100%;
-}
 #navbar {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
   overflow: hidden;
-  background-color: rgba(0,0,0,0.2);
+  background-color: rgba(255,255,255,0.8);
+  box-shadow: 0px 0px 2px 1px rgba(0,0,0, 0.2);
 }
 #navbar a {
   float: left;
   display: block;
-  color: black;
+  color: rgb(100,100,100);
   text-align: center;
   padding: 15px 16px;
   text-decoration: none;
@@ -27,7 +28,7 @@ body {
 }
 #navbar a:hover {
   background-color: rgba(255 , 255 , 255, 0.5);
-  color: black;
+  color: rgb(100,100,100);
 }
 .content {
   padding: 16px;
@@ -86,11 +87,23 @@ img {
 }
 .links:hover{ text-decoration: underline; }
 .footer{
-  background-color: rgb(200,200,200);
-  padding-top: 2.5em;
-  padding-bottom: 2.5em;
-  padding-left: 2em;
+  background-color: rgba(200,200,200, 0.5);
+  padding-top: 1em;
+  text-align: center;
   display: block;
+  font-size: 0.8em;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+.row {
+    margin: auto;
+    width: 30%;
+    text-decoration: none;
+}
+.row a {
+    color: rgb(50,50,50);
 }
 .row:after{
   width: 100%;
@@ -98,29 +111,7 @@ img {
     display: table;
     clear: both;
 }
-.column{
-  font-size: 0.9em;
-  display: inline-block;
-  padding-right: 0em;
-  width: 33.33%;
-  height: 0em;
-  padding-bottom: 2em;
-  background-color: rgb(200,200,200);
-}
-.column a{
-  text-decoration: none;
-  color: grey;
-  padding: 0em;
-  padding-right: 0.25em;
-  padding-left: 0.25em;
-  width: 100%;
-}
-.column a:hover{ text-decoration: underline; }
-.turtle{
-  margin: 0em;
-  padding: 0em;
-  float: right;
-}
+
 @media screen and (max-width: 600px) {
     .column {
         width: 100%;
