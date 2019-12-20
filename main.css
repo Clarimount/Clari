@@ -106,7 +106,7 @@ body {
   width: 100%;
 }
 
-/* Responsive layout - makes a two column-layout instead of four columns */
+/* makes a two column-layout*/
 @media screen and (max-width: 800px) {
   .column {
     flex: 50%;
@@ -114,10 +114,20 @@ body {
   }
 }
 
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+/* makes a singular column */
 @media screen and (max-width: 600px) {
   .column {
     flex: 100%;
     max-width: 100%;
   }
 }
+
+.char-tab {
+  color: rgb{50 , 50 , 50};
+  padding: 16px 16px;
+  background-color: rgb{150 , 150 , 150};
+}
+
+.char-tab:hover {
+  background-color: rgb{100 , 100 , 100};
+} 
