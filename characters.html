@@ -24,11 +24,53 @@
 </div>
 <div class="content">
     <div class="contentblock">
-      <div class="char-tab">
-        <button class="CLari">enter name</button>
-        <button class="Clara">enter name</button>
+      
+       <div class="charactertab">
+       
+        <button class="characterlink" onclick="openchar(evt,'clari')">Clari</button>
+        <button class="characterlink" onclick="openchar(evt,'clara')">Clara</button>
+        <button class="characterlink" onclick="openchar(evt,'exe')">Exe</button>
+        
       </div>
+    
+    <div id="clari" class="charactercontent">
+        <h4>name</h4>
+        <p>This is my character</p>
+    </div>
+    
+    <div id="clara" class="charactercontent">
+        <h4>name</h4>
+        <p>This is my character</p>
+    </div>
+    
+    <div id="exe" class="charactercontent">
+        <h4>name</h4>
+        <p>This is my character</p>
+    </div>
+    
     </div>
 </div>
 </body>
+    <script>
+function openchar(evt, name) 
+{
+    var i, charactertab, characterlink, name, evt;
+    
+    charactertab = document.getElementsByClassName("charactercontent");
+    for (i = 0; i < charactercontent.length; i++) {
+        charactercontent[i].replace("none", "block");
+    }
+    
+    characterlink = document.getElementsByClassName("characterlink");
+    for (i = 0; i < characterlink.length; i++) {
+        characterlink[i].className = characterlink[i].className.replace("active" , "");
+    }
+    
+    document.getElementById(name).style.display = "block";
+    evt.currentTarget.className += "active";
+    
+}
+    
+    
+    </script>
 </html>
