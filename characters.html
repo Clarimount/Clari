@@ -21,68 +21,32 @@
           These are my personal characters that I've created or bought, if that is I'll link to the original artist.
       </p>
     </div>
-</div>
+</div>      
+
 <div class="content">
     <div class="contentblock">
-      
-       <div class="charactertab">
-        <button class="characterlink" onclick="openChar('clari')">Clari</button>
-        <button class="characterlink" onclick="openChar('clara')">Clara</button>
-        <button class="characterlink" onclick="openChar('exe')">Exe</button>
-      </div>
+    <div class="charactertab">
+      <button class="tablinks" onclick="openCharacter(event, 'clari')">Clari</button>
+      <button class="tablinks" onclick="openCharacter(event, 'clara')">Clara</button>
+      <button class="tablinks" onclick="openCharacter(event, 'exe')">Exe</button>
+    </div>
     
     <div id="clari" class="charactercontent">
-        <h4>name</h4>
-        <p>This is my character</p>
+      <h3>Clari</h3>
+      <p>This is my character</p>
     </div>
-    
+
     <div id="clara" class="charactercontent">
-        <h4>name</h4>
-        <p>This is my character</p>
+      <h3>Clara</h3>
+      <p>This is my character</p> 
     </div>
-    
+
     <div id="exe" class="charactercontent">
-        <h4>name</h4>
-        <p>This is my character</p>
+      <h3>Exe</h3>
+      <p>This is my character</p>
     </div>
-    
     </div>
 </div>
-<script>
-    /*--
-function openchar(evt, name) 
-{
-    var i, charactertab, characterlink, name, evt;
-    
-    charactertab = document.getElementsByClassName("charactercontent");
-    for (i = 0; i < charactercontent.length; i++) {
-        charactercontent[i].replace("none", "block");
-    }
-    
-    characterlink = document.getElementsByClassName("characterlink");
-    for (i = 0; i < characterlink.length; i++) {
-        characterlink[i].className = characterlink[i].className.replace("active" , "");
-    }
-    
-    document.getElementById(name).style.display = "block";
-    evt.currentTarget.className += "active";
-    
-}--*/
-    
-    
-function openChar(evt, CharName) {
-  var i, charactercontent, tablinks;
-  charactercontent = document.getElementsByClassName("charactercontent");
-  for (i = 0; i < charactercontent.length; i++) {
-    charactercontent[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablinks");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
-  }
-  document.getElementById(CharName).style.display = "block";
-  evt.currentTarget.className += " active";
-}
-    </script>
+<script src="java.js"></script>
 </body>
 </html>

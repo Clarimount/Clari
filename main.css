@@ -124,45 +124,12 @@ body {
 }
 
 /* Character site styling */
-/*
-.charactertab {
-    overflow: hidden;
-    background-color: rgb(150,220,100);
-}
-
-.charactertab button {
-    padding: 16px 16px;
-    background-color: inherit;
-    float: left;
-    transition: 0.25s;
-    border: none;
-    color: white;
-    font-size: 1.1em;
-}
-
-.charactertab button:hover {
-    background-color: rgb(150,200,100);
-}
-
-.charactertab button:active {
-    background-color: rgb(150,200,150);
-}
-
-.characterlink {}
-
-.charactercontent {
-    display: none;
-}
-*/
-
-/* Style the tab */
 .charactertab {
   overflow: hidden;
   border: 1px solid #ccc;
   background-color: #f1f1f1;
 }
 
-/* Style the buttons inside the tab */
 .charactertab button {
   background-color: inherit;
   float: left;
@@ -174,18 +141,15 @@ body {
   font-size: 17px;
 }
 
-/* Change background color of buttons on hover */
 .charactertab button:hover {
   background-color: #ddd;
 }
 
-/* Create an active/current tablink class */
 .charactertab button.active {
   background-color: #ccc;
 }
 
-/* Style the tab content */
-.charactercontent {
+    .charactercontent {
   display: none;
   padding: 6px 12px;
   border: 1px solid #ccc;
