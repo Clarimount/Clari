@@ -26,11 +26,9 @@
     <div class="contentblock">
       
        <div class="charactertab">
-       
-        <button class="characterlink" onclick="openchar(evt,'clari')">Clari</button>
-        <button class="characterlink" onclick="openchar(evt,'clara')">Clara</button>
-        <button class="characterlink" onclick="openchar(evt,'exe')">Exe</button>
-        
+        <button class="characterlink" onclick="openChar('clari')">Clari</button>
+        <button class="characterlink" onclick="openChar('clara')">Clara</button>
+        <button class="characterlink" onclick="openChar('exe')">Exe</button>
       </div>
     
     <div id="clari" class="charactercontent">
@@ -50,8 +48,8 @@
     
     </div>
 </div>
-</body>
-    <script>
+<script>
+    /*--
 function openchar(evt, name) 
 {
     var i, charactertab, characterlink, name, evt;
@@ -69,8 +67,22 @@ function openchar(evt, name)
     document.getElementById(name).style.display = "block";
     evt.currentTarget.className += "active";
     
+}--*/
+    
+    
+function openChar(evt, CharName) {
+  var i, charactercontent, tablinks;
+  charactercontent = document.getElementsByClassName("charactercontent");
+  for (i = 0; i < charactercontent.length; i++) {
+    charactercontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(CharName).style.display = "block";
+  evt.currentTarget.className += " active";
 }
-    
-    
     </script>
+</body>
 </html>
