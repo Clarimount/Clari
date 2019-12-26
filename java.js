@@ -24,7 +24,4 @@ function openCharacter(evt, CharName) {
   evt.currentTarget.className += " active";
 }
 
-function Hewwo()
-{
-    document.getElementById('demo').innerHTML = Date()
-}
+document.getElementById("OpenDefault").click();

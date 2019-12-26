@@ -6,7 +6,6 @@ body {
 .bg {
   background: url('image/claricoatredraw.png');
   filter: blur(5px);
-  -webkit-filter: blur(5px);
   position: fixed;
   width: 100%;
   height: 100%;
@@ -20,30 +19,31 @@ body {
   margin-left: auto;
   margin-right: auto;
   overflow: hidden;
-  padding-left: auto; 
-  padding-right: auto;
 }
 #navbar a {
   float: left;
-  padding: 15px 16px;
-  width: 40%;
+  width: 33%;
+  padding-top: 15px;
+  padding-bottom: 15px;
   display: block;
   color: rgb(100,100,100);
   text-align: center;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 1.1em;
 }
 #navbar a:hover {
   background-color: rgba(255 , 255 , 255, 0.5);
   color: rgb(100,100,100);
 }
-@media screen and (max-width: 1350px) {
+
+@media screen and (max-width: 1000px) {
   #navbar a {
     float: none;
     width: auto;
       
   }
 }
+
 .navlinks {
     width: 50%;
     text-align: center;
@@ -126,35 +126,67 @@ body {
 /* Character site styling */
 .charactertab {
   overflow: hidden;
-  border: 1px solid #ccc;
-  background-color: #f1f1f1;
+  background-color: rgba(0,0,0,0);
 }
 
 .charactertab button {
   background-color: inherit;
   float: left;
-  border: none;
   outline: none;
   cursor: pointer;
   padding: 14px 16px;
   transition: 0.3s;
   font-size: 17px;
+  border-width: 1px;
+  border-bottom-color: rgb(0,0,0,0.2);
+  border-right: none;
+  border-top: none;
+  border-left: none;
 }
 
 .charactertab button:hover {
-  background-color: #ddd;
+  background-color: rgba(0,0,0,0.1);
 }
 
 .charactertab button.active {
-  background-color: #ccc;
+  background-color: rgba(50,150,50,0.5);
+  color: white;
 }
 
-    .charactercontent {
+.charactercontent {
   display: none;
+  height: auto;
+  overflow: auto;
   padding: 6px 12px;
-  border: 1px solid #ccc;
-  border-top: none;
 }
 
+.charactercontent img {
+    width: 100%;
+}
+
+.profileimage {
+    padding: 0px 10px;
+    width: 50%;
+    float: right;
+}
+
+.profiletext {
+    width: 50%;
+    float: inherit;
+}
+
+.profiletext a {
+    text-decoration: none;
+    padding: 10px 16px;
+    background-color: white;
+    border-width: thin;
+    border-style: solid;
+    border-color: rgba(0,0,0,0.5);
+    border-radius: 0.5em;
+    color: rgb(50,50,50);
+}
+.profiletext a:hover {
+    background-color: rgb(240,240,240);
+}
 
 
