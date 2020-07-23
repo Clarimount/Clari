@@ -4,15 +4,15 @@ body {
   font-family: verdana;
 }
 .bg {
-  background: url('image/claricoatredraw.png');
-  filter: blur(5px);
+  background: url('image/troutTWITTERCropped.png');
+  filter: blur(2.5px);
   position: fixed;
   width: 100%;
   height: 100%;
   top: 0;
   left: 0;
   z-index: -1;
-  background-position-y: -10em;
+  background-position: left;
 }
 #navbar {
   width: 100%;
