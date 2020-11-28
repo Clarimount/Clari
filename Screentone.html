@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function changeRed(value) {
+    document.getElementById('valRed').innerHTML = value;
+    changeAll();
+}
+function changeGreen(value) {
+    document.getElementById('valGreen').innerHTML = value;
+    changeAll();
+}
+function changeBlue(value) {
+    document.getElementById('valBlue').innerHTML = value;
+    changeAll();
+}
+function changeAll() {
+    var r = document.getElementById('valRed').innerHTML;
+    var g = document.getElementById('valGreen').innerHTML;
+    var b = document.getElementById('valBlue').innerHTML;
+    document.getElementById('change').style.backgroundColor = "background: rgb(" + r + "," + g + "," + b + ")";
+}
+</script>
+</head>
+<body id="change">
+<div id="change" style="width: 1000px;">asdfariofgunjaderilgunadrfglisundrgkadrg</div>    
+<tr>
+<td id="valRed"></td>
+<td id="valGreen"></td>
+<td id="valBlue"></td>
+</tr>
+
+<tr>
+<td id="red" style="height:50px;background-color:red"></td>
+<td id="green" style="background-color:green"></td>
+<td id="blue" style="background-color:blue"></td>
+</tr>
+
+<tr>
+<td>
+<input oninput="changeRed(this.value)" onchange="changeRed(this.value)" type="range" id="slideRed" name="slideRed" min="0" max="255">
+</td>
+<td>
+<input oninput="changeGreen(this.value)" onchange="changeGreen(this.value)" type="range" id="slideGreen" name="slideGreen" min="0" max="255">
+</td>
+<td>
+<input oninput="changeBlue(this.value)" onchange="changeBlue(this.value)" type="range" id="slideBlue" name="slideBlue" min="0" max="255">
+</td>
+</tr>
+</body>
+</html>
