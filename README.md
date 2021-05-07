@@ -1,2 +1,2 @@
 # Clari
-This is My portfolio website and yeah you and also commission me from here also. 
+This is my portfolio website. You can also commission me from here. 
