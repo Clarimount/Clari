@@ -4,7 +4,7 @@ body {
   font-family: verdana;
 }
 .bg {
-  background: url('image/webs.png');
+  background: url('image/webs\ \(2\).png');
   filter: blur(0.25px);
   position: fixed;
   width: 100%;
